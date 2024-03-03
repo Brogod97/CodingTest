@@ -23,4 +23,11 @@ class Solution {
         - substring(int start): 지정된 위치부터 끝까지의 부분 문자열을 반환
         - substring(int start, int end): 지정된 범위의 부분 문자열을 반환
         - reverse(): 문자열을 뒤집기
+
+    - 주의 사항
+        - StringBuilder는 문자열을 반환할 때 toString()을 호출하여 최종 문자열을 획득함
+
+    - 참고
+        - StringBuilder는 동기화 지원 X
+        - StringBuffer는 동기화 지원 O
 */
