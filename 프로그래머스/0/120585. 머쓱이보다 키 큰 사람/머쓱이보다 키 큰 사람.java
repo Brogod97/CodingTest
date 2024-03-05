@@ -5,3 +5,12 @@ class Solution {
         return (int) Arrays.stream(array).filter(i -> i > height).count();
     }
 }
+
+// 다른 풀이
+int answer = 0;
+for(int i : array) {
+    if(i > height) {
+        answer++;    
+    }
+}
+return answer;
