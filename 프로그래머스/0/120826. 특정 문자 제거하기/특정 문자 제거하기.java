@@ -13,3 +13,8 @@ class Solution {
         return sb.toString();
     }
 }
+
+// 다른 풀이
+return my_string.replace(letter, "");
+// .replace(타겟, 대체할 문자) : 처음 발견한 문자를 치환 후 반환
+// .replaceAll(타겟, 대체할 문자) : 발견한 모든 문자를 치환 후 반환
