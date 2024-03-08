@@ -9,3 +9,12 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 답안
+while(n>0){
+    answer+=n%10;
+    n/=10;
+}
+
+// 다른 답안
+return Arrays.stream(String.valueOf(n).split("")).mapToInt(Integer::parseInt).sum();
