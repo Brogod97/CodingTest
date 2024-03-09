@@ -3,3 +3,6 @@ class Solution {
         return n % slice != 0 ? n / slice + 1 : n / slice;
     }
 }
+
+// 다른 풀이
+return (n + slice - 1) / slice;
