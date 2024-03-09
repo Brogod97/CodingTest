@@ -6,3 +6,6 @@ class Solution {
 
 // 다른 풀이
 return (n + slice - 1) / slice;
+
+// 다른 풀이
+return (int) Math.ceil((double) n / slice);
