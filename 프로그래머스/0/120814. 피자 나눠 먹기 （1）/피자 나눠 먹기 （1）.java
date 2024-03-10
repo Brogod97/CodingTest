@@ -11,3 +11,6 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return (n + 6) / 7;
