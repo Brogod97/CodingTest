@@ -3,3 +3,8 @@ class Solution {
         return (int)Math.pow(2, t) * n;
     }
 }
+
+// 다른 풀이
+return n << t;
+
+
