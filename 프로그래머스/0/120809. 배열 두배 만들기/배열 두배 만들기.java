@@ -9,3 +9,7 @@ class Solution {
                         .toArray();
     }
 }
+
+// 다른 풀이
+for(int i=0; i<numbers.length; i++) numbers[i] *= 2;
+return numbers;
