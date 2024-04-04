@@ -10,3 +10,8 @@ class Solution {
         }
     }
 }
+
+// 변수명 --> ab 
+
+// 다른 풀이
+return Math.max(Integer.parseInt(String.valueOf(a)+String.valueOf(b)), 2*a*b);
