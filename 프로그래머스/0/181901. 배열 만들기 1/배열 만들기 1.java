@@ -8,3 +8,13 @@ class Solution {
                  .toArray();
     }
 }
+
+// 다른 풀이
+int count = n / k;
+int[] answer = new int[count];
+
+for (int i = 1; i <= count; i++) {
+    answer[i - 1] = k * i;
+}
+
+return answer;
