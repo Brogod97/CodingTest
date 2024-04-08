@@ -11,3 +11,8 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return IntStream.range(0, strArr.length)
+                .mapToObj(i -> i % 2 == 0 ? strArr[i].toLowerCase() : strArr[i].toUpperCase())
+                .toArray(String[]::new); // 새로운 String 배열 생성
