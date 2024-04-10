@@ -12,3 +12,13 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return Arrays.stream(num_list)
+             .sorted()
+             .limit(5)
+             .toArray();
+
+// 다른 풀이
+Arrays.sort(num_list);
+return Arrays.copyOfRange(num_list, 0, 5);
