@@ -19,3 +19,21 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+String answer = "";
+
+char[] ch = my_string.toCharArray();
+
+ch[num1] = my_string.charAt(num2);
+ch[num2] = my_string.charAt(num1);
+
+answer = String.valueOf(ch);
+return answer;
+
+// 다른 풀이
+List<String> list = Arrays.stream(myString.split(""))
+                          .collect(Collectors.toList());
+
+Collections.swap(list, num1, num2);
+return String.join("", list);
