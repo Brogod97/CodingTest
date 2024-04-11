@@ -14,3 +14,8 @@ def solution(my_string, num1, num2):
             idx += 1
     
     return answer
+
+# 다른 풀이
+s = list(my_string)
+s[num1],s[num2] = s[num2],s[num1] # swap
+return ''.join(s)
