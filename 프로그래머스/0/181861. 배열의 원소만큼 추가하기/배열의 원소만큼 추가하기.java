@@ -15,3 +15,9 @@ class Solution {
                      .toArray();
     }
 }
+
+// 다른 풀이
+return Arrays.stream(arr)
+             .boxed()
+             .flatMap(num -> Collections.nCopies(num, num).stream())
+             .collect(Collectors.toList());
