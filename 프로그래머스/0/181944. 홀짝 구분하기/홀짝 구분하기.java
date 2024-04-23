@@ -12,3 +12,6 @@ public class Solution {
         }
     }
 }
+
+// 다른 풀이
+System.out.print(n + " is "+(n % 2 == 0 ? "even" : "odd"));
