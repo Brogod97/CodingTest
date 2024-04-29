@@ -13,3 +13,8 @@ class Solution {
         return answer.toArray(new String[answer.size()]);
     }
 }
+
+// 다른 풀이
+return Arrays.stream(strArr)
+             .filter(s -> !s.contains("ad"))
+             .toArray(String[]::new);
