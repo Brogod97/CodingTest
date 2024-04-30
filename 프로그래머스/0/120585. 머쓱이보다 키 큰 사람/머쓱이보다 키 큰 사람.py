@@ -18,3 +18,4 @@ return answer
 return len(list(filter(lambda v: v > height, array)))
 # array에 대해 lambda 수행 후 조건이 일치하는 경우 list로 반환
 # 리스트의 길이 반환
+
