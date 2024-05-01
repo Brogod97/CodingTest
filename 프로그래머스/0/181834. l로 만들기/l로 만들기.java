@@ -10,3 +10,11 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return myString.replaceAll("[^l-z]", "l");
+
+// 다른 풀이
+return myString.chars()
+               .mapToObj(i -> Character.toString(Integer.max(i, 'l')))
+               .collect(Collectors.joining());
