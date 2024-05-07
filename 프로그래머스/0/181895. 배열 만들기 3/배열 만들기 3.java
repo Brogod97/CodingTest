@@ -15,3 +15,7 @@ class Solution {
                      .toArray();
     }
 }
+
+// 다른 풀이
+return Arrays.stream(intervals)
+             .flatMapToInt(ints -> Arrays.stream(Arrays.copyOfRange(arr, ints[0], ints[1] + 1))).toArray();
