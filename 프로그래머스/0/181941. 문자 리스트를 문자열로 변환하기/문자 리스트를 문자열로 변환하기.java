@@ -9,3 +9,9 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return String.join("", arr);
+
+// 다른 풀이
+return Arrays.stream(arr).collect(Collectors.joining());
