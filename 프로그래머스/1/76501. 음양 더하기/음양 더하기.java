@@ -13,3 +13,9 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+int answer = 0;
+for (int i=0; i<signs.length; i++)
+    answer += absolutes[i] * (signs[i]? 1: -1);
+return answer;
