@@ -16,3 +16,19 @@ class Solution {
         return max - answer;
     }
 }
+
+// 다른 풀이
+int sum = 45;
+for (int i : numbers) {
+    sum -= i;
+}
+return sum;
+
+// 다른 풀이
+return 45 - Arrays.stream(numbers).sum();
+
+// 다른 풀이
+return IntStream.rangeClosed(0, 9)
+                .filter(i -> Arrays.stream(numbers)
+                .noneMatch(num -> i == num))
+                .sum();
