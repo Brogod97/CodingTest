@@ -12,3 +12,6 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return s.substring((s.length()-1)/2, s.length()/2 + 1);
