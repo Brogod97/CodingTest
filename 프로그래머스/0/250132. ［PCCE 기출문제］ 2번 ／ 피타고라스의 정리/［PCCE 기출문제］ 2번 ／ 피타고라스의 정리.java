@@ -11,3 +11,6 @@ public class Solution {
         System.out.println(b_square);
     }
 }
+
+// 다른 풀이
+int b_square = (c - a) * (c + a);
