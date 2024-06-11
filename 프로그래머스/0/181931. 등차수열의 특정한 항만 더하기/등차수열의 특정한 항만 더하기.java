@@ -11,3 +11,8 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return IntStream.range(0, included.length)
+                .map(idx -> included[idx] ? a+(idx*d) : 0)
+                .sum();
