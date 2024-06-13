@@ -16,3 +16,8 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return (int) IntStream.rangeClosed(1, n)
+                      .filter(i -> (int) IntStream.rangeClosed(1, i)
+                      .filter(i2 -> i % i2 == 0).count() > 2).count();
