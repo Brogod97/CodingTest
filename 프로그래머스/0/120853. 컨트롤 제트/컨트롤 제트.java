@@ -14,3 +14,19 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+int answer = 0;
+Stack<Integer> stack = new Stack<>();
+
+for (String w : s.split(" ")) {
+    if (w.equals("Z")) {
+        stack.pop();
+    } else {
+        stack.push(Integer.parseInt(w));
+    }
+}
+for (int i : stack) {
+    answer += i;
+}
+return answer;
