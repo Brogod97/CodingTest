@@ -24,10 +24,10 @@ for(int a = i; a <= j; a++) {
 return str.length() - str.replace(k+"", "").length();
 
 // 다른 풀이
- return (int) Arrays.stream(IntStream.rangeClosed(i, j)
-                        .mapToObj(String::valueOf)
-                        .flatMap(String::lines)
-                        .collect(Collectors.joining())
-                        .split(""))
-                        .filter(s -> s.equals(String.valueOf(k)))
-                        .count();
+return (int) Arrays.stream(IntStream.rangeClosed(i, j)
+                    .mapToObj(String::valueOf)
+                    .flatMap(String::lines)
+                    .collect(Collectors.joining())
+                    .split(""))
+                    .filter(s -> s.equals(String.valueOf(k)))
+                    .count();
