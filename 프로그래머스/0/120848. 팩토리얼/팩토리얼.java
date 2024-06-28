@@ -19,3 +19,26 @@ class Solution {
         return number;
     }
 }
+
+// 다른 풀이
+int fac = 1;
+int i = 0;
+
+while(true){
+    if(fac <= n){
+        fac *= i + 1;
+        i++;
+    }else break;
+}
+
+return i-1;
+
+// 다른 풀이
+int answer = 1;
+int factorial = 1;
+
+while(n >= factorial) {
+    answer ++;
+    factorial *= answer;
+}
+return answer -1 ;
