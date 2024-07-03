@@ -14,3 +14,8 @@ class Solution {
         }
     }
 }
+
+// 다른 풀이
+StringBuilder sb = new StringBuilder();
+IntStream.range(0, a).forEach(s -> sb.append("*"));
+IntStream.range(0, b).forEach(s -> System.out.println(sb.toString()));
