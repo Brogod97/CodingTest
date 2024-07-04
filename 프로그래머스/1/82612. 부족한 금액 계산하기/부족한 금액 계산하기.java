@@ -16,3 +16,15 @@ class Solution {
         return answer;
     }
 }
+
+// 다른 풀이
+return Math.max(price * (count * (count + 1) / 2) - money, 0);
+
+// 다른 풀이
+long answer = money;
+
+for (int cnt = 0; cnt < count; ++cnt) {
+    answer -= (price * (cnt + 1));
+}
+
+return (answer > 0 ? 0 : -answer);
